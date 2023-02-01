@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container > .App > h1 {
+  text-align: center;
+}
+.App {
+  max-width: 500px;
+  width: 100%;
+}
+.time-remain,
+.time-remain-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.timerPart {
+  width: 100%;
+  padding: 15px 8px 25px;
+}
+.timerPart h2 {
+  text-align: center;
+}
+.time-remain > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.time {
+  background-color: black;
+  padding: 20px;
+  border-radius: 50%;
+  color: white;
+}
+.ImagePart {
+  margin: 10px 0 15px;
+  position: relative;
+}
+.ImagePart img {
+  width: 100%;
+}
+.price-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.oldPrice {
+  color: grey;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+.oldPrice > p:nth-child(2) {
+  text-decoration: line-through;
+  font-size: 30px;
+}
+.oldPrice,
+.newPrice {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+.newPrice {
+  background-color: black;
+  color: white;
+}
+.newPrice p:nth-child(2) {
+  font-size: 30px;
+}
+.percent {
+  background-color: black;
+  color: white;
+  width: 48px;
+  height: 43px;
+  border-radius: 0 0 0 23px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addTocart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+}
+.addTocart button {
+  width: 80%;
+}
+.buy {
+  background-color: #1a5572;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px grey;
+}
+.addTocart p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.addTocart p span {
+  width: 50px;
+  height: 50px;
+  background-color: #1a5572;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ulComponent {
+  width: 100%;
+  border-top: 10px solid rgb(201, 195, 195);
+  padding: 30px 10px 35px;
+  margin-top: 25px;
+}
+.myUl {
+  max-width: 500px;
+  width: 100%;
+  padding: 10px 15px;
+}
+.list-item {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.list-item span {
+  display: flex;
+  width: 5%;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  background-color: #8dadbc;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+}
+.list-item p {
+  width: 80%;
+}
+.vidos {
+  margin: 20px 0;
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+.iconFb {
+  width: 20px;
+  height: 20px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.userWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.user > img {
+  width: 50px;
+  border-radius: 50%;
+}
+.user > span {
+  font-weight: 600;
+}
+.material-symbols-outlined {
+  color: blue;
+}
+.likePart {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+.likePart > div,
+.btnLike {
+  display: flex;
+  align-items: center;
+}
+.btnLike {
+  padding: 10px;
+  color: grey;
+  background: none;
+  border: none;
+  gap: 10px;
+  cursor: pointer;
+}
+.com-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.coms {
+  padding: 25px 5px;
+}
+.compText {
+  padding: 20px 5px;
+}
+.eachCom {
+  border: 1px solid grey;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.send-comment {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+}
+.file {
+  display: none;
+}
+.lab {
+  background-color: rgb(246, 240, 240);
+  padding: 5px;
+  width: 39%;
+}
+.com-wrap {
+  width: 100%;
+}
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.add-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.add {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.add-wrapper textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 10px;
+  margin: 10px 0;
+}
+#newuserName {
+  width: 60%;
+  border: 0.2px solid grey;
+  padding: 0 10px;
+}
+.sendCom {
+  background-color: rgb(65, 187, 214);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.sendComBtns {
+  align-self: flex-end;
+  display: flex;
+  gap: 15px;
+}
+.hidden {
+  display: none;
+}
+.patverUl,
+.patverUl li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.patverUl li {
+  list-style: none;
+  margin-top: 25px;
+}
+.patverUl li > div {
+  background-color: #1a5572;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.patverUl li > div > span {
+  color: white;
+}
+.callContainer {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.callContainer > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.inp {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.inp > span {
+  background-color: rgb(203, 205, 207);
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+}
+.inp > input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.mainImage {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.mainImage > button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(218, 218, 218, 0.522);
+  cursor: pointer;
+}
+.mainImage > button > span {
+  color: white;
+}
+.mainImage > button:first-child {
+  top: 50%;
+}
+.mainImage > button:last-child {
+  top: 50%;
+  right: 0;
+}
+.mainImg {
+  width: 100%;
+}
+.mainImg > img {
+  width: 100%;
+}
+.allimagesofSlide {
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+.allimagesofSlide > img {
+  width: 100px;
+  height: 100%;
+}
+.onImage {
+  border: 2px solid rgb(94, 52, 52);
+}
+.slide {
+  margin-bottom: 30px;
+}
